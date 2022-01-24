@@ -7,7 +7,21 @@
   "item": [
     {
       "name": "EP_1",
-      "_postman_id": "3ae4cc09-1bd5-4788-b583-05836494e9ce",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "b9ad41b9-cff0-44fe-8b87-3ca818a22c1b",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "3ae4cc09-1bd5-4788-b583-05836494e9ce",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -43,7 +57,7 @@
     },
     {
       "name": "EP_2",
-      "_postman_id": "891ce35c-31d8-4b60-8d26-4e9a4c49516f",
+      "id": "891ce35c-31d8-4b60-8d26-4e9a4c49516f",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -68,10 +82,7 @@
               "value": "2000",
               "type": "text"
             }
-          ],
-          "options": {
-            "formdata": {}
-          }
+          ]
         },
         "url": {
           "raw": "http://162.55.220.72:5005/user_info_3",
@@ -109,7 +120,7 @@
     },
     {
       "name": "EP_3",
-      "_postman_id": "69e27737-b8d4-447a-8461-4a4b7acc3419",
+      "id": "69e27737-b8d4-447a-8461-4a4b7acc3419",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -152,7 +163,7 @@
     },
     {
       "name": "EP_4",
-      "_postman_id": "d759cfcc-058f-49c8-9e40-850af760ace0",
+      "id": "d759cfcc-058f-49c8-9e40-850af760ace0",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -195,7 +206,7 @@
     },
     {
       "name": "EP_5",
-      "_postman_id": "85193e66-26d0-4beb-bdd9-12103679a0c2",
+      "id": "85193e66-26d0-4beb-bdd9-12103679a0c2",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -238,7 +249,7 @@
     },
     {
       "name": "EP_6",
-      "_postman_id": "179ec40b-a889-4652-a34d-e94daff3de46",
+      "id": "179ec40b-a889-4652-a34d-e94daff3de46",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -281,7 +292,7 @@
     },
     {
       "name": "EP_7",
-      "_postman_id": "410fd20a-160e-422d-88a7-addb60c4a8d8",
+      "id": "410fd20a-160e-422d-88a7-addb60c4a8d8",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -306,10 +317,7 @@
               "value": "1000",
               "type": "text"
             }
-          ],
-          "options": {
-            "formdata": {}
-          }
+          ]
         },
         "url": {
           "raw": "http://162.55.220.72:5005/user_info_2",
