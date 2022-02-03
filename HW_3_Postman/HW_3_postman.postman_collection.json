@@ -146,7 +146,7 @@
 							"  pm.response.to.have.jsonSchema(schema);\r",
 							"});\r",
 							"// 3) В ответе указаны коэффициенты умножения salary, напишите тесты по проверке правильности результата перемножения на коэффициент.\r",
-							"var salary = pm.response.json().start_qa_salary;\r",
+							"var salary = JSON.parse(request.data).salary;\r",
 							"var salary_coef = pm.response.json();\r",
 							"pm.test(\"qa_salary_after_6_months = 2000\", function () {\r",
 							"    pm.expect(salary_coef.qa_salary_after_6_months).to.eql(salary*2)\r",
